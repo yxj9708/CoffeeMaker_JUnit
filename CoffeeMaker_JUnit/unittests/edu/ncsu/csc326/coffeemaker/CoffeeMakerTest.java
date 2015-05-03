@@ -82,7 +82,12 @@ public class CoffeeMakerTest extends TestCase {
 	}
 	
 	public void testMakeCoffee2() {
-		cm.addRecipe(r1);
+		cm.addRecipe(r2);
 		assertEquals(0, cm.makeCoffee(0, 75));
+	}
+	
+	public void testMakeCoffee3() {
+		cm.addRecipe(r2);
+		assertEquals(25, cm.makeCoffee(0, 100));
 	}
 }
